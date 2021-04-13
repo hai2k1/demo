@@ -1,0 +1,27 @@
+/* define variables for the primary colors */
+
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+@mixin width {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* use the variables */
+
+.main-header {
+    background-color: $primary_1;
+    @include width()
+}
+
+.menu-left {
+    background-color: $primary_2;
+    @include width()
+}
+
+.menu-right {
+    background-color: $primary_3;
+    @include width()
+}
